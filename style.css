@@ -91,6 +91,14 @@ header {
     .desc {
         font-size: 24px;
         font-weight: bolder;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 439px) {
+    .desc {
+        font-size: 24px;
+        font-weight: bolder;
         margin-bottom: 60px;
     }
 }
@@ -290,6 +298,14 @@ header {
     border-radius: 20px;
 }
 
+@media screen and (max-width: 1144px) {
+    .accomodation-container {
+        background-color: white;
+        padding: 0%;
+        margin: 0%;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .accomodation-container {
         background-color: white;
@@ -297,14 +313,6 @@ header {
         margin: 0;
     }
 }
-
-/* @media screen and (max-width: 1144px) {
-    .accomodation-container {
-        background-color: white;
-        padding: 0%;
-        margin: 0%;
-    }
-} */
 
 .accomodation-list {
     font-weight: normal;
@@ -356,8 +364,14 @@ header {
 
 #most-popular {
     flex: 33%;
-    /* padding: 38px; */
     padding-bottom: 25px;
+}
+
+@media screen and (max-width: 1144px) {
+    #most-popular {
+        background-color: #F5F5F5;
+        padding: 20px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -366,12 +380,6 @@ header {
         border-radius: 0%;
     }
 }
-
-/* @media screen and (max-width: 1144px) {
-    #most-popular {
-        background-color: #F5F5F5;
-    }
-} */
 
 #most-popular .card {
     height: 146px;
@@ -455,7 +463,7 @@ header {
     height: 500px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1144px) {
     .activites-cards {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
@@ -464,12 +472,14 @@ header {
     }
 }
 
-/* @media screen and (max-width: 1144px) {
+@media screen and (max-width: 768px) {
     .activites-cards {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 2fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        height: auto;
+        grid-gap: 20px;
     }
-} */
+}
 
 .activites-card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -480,18 +490,30 @@ header {
     cursor: pointer;
 }
 
+@media screen and (max-width: 1144px) {
+    .activites-card {
+        height: 250px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .activites-card {
         height: 200px;
     }
 }
 
-
 .nest-1 {
     display: grid;
     gap: 40px;
     grid-template-columns: 1fr;
     grid-template-rows: auto 165px;
+}
+
+@media screen and (max-width: 1144px) {
+    .nest-1 {
+        gap: 20px;
+        grid-template-rows: 1fr 1fr;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -506,6 +528,12 @@ header {
     gap: 40px;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(2, 1fr);
+}
+
+@media screen and (max-width: 1144px) {
+    .nest-2 {
+        gap: 20px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -568,17 +596,17 @@ footer {
     flex-wrap: wrap;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1144px) {
     .ftr-container {
         flex-direction: column;
     }
 }
 
-/* @media screen (min-width: 768px) and (max-width: 1144px) {
+@media screen and (max-width: 768px) {
     .ftr-container {
         flex-direction: column;
     }
-} */
+}
 
 .ftr-title {
     padding-left: 50px;
