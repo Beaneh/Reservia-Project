@@ -27,6 +27,12 @@ header {
     padding: 30px;
 }
 
+@media screen and (max-width: 768px) {
+    header {
+        display: block;
+    }
+}
+
 .logo {
     margin-right: auto;
     align-items: flex-start;
@@ -40,17 +46,33 @@ header {
 }
 
 .nav_links li a:hover {
+    text-decoration: overline solid #0065FC;
     color: #0065FC;
 }
 
-.nav_links li a:hover {
-    text-decoration-color: #0065FC;
-    text-decoration: overline;
+@media screen and (max-width: 768px) {
+    .nav_links li a:hover {
+        text-decoration: underline solid #0065FC 3px;
+    }
 }
 
 .signup {
     color: #0065FC;
     font-weight: bold;
+}
+
+.signup a:nth-child(2) {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .signup a:nth-child(1) {
+        display: block;
+    }
+
+    .signup a:nth-child(2) {
+        display: none;
+    }
 }
 
 #main {
@@ -102,6 +124,13 @@ header {
         margin-bottom: 60px;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .search-box {
+        width: auto;
+    }
+}
+
 
 .search {
     border: 1px solid #cdcdcd;
