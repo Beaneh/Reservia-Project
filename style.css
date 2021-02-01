@@ -30,7 +30,14 @@ header {
 @media screen and (max-width: 768px) {
     header {
         display: block;
+        padding: 15px;
     }
+}
+
+.logo-header {
+    margin-right: auto;
+    align-items: flex-start;
+    height: 65px;
 }
 
 .logo {
@@ -61,17 +68,27 @@ header {
     font-weight: bold;
 }
 
-.signup a:nth-child(2) {
+.sign-up {
     display: none;
 }
 
 @media screen and (max-width: 768px) {
-    .signup a:nth-child(1) {
-        display: block;
+    .logo-header {
+        display: flex;
+        justify-content: space-between
     }
 
-    .signup a:nth-child(2) {
+    .signup {
         display: none;
+        align-items: center;
+        width: 100%;
+    }
+
+    .sign-up {
+        display: block;
+        margin-top: 20px;
+        color: #0065FC;
+        font-weight: bold;
     }
 }
 
@@ -99,6 +116,7 @@ header {
 @media screen and (max-width: 768px) {
     .description {
         font-size: 15px;
+        margin-top: 0%;
     }
 }
 
