@@ -110,7 +110,7 @@ header {
 
 
 .description {
-    margin-top: 35px;
+    margin-top: 32px;
 }
 
 @media screen and (max-width: 768px) {
@@ -125,6 +125,7 @@ header {
     font-size: 22px;
     position: relative;
     height: 10px;
+    margin-bottom: 25px;
 }
 
 @media screen and (max-width: 768px) {
